@@ -63,6 +63,17 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.82);backdro
 .hero::after{content:"";position:absolute;inset:0;opacity:.12;background-image:linear-gradient(rgba(255,255,255,.6) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.6) 1px,transparent 1px);background-size:46px 46px;mask:radial-gradient(70% 70% at 70% 30%,#000,transparent)}
 .hero-grid{position:relative;display:grid;grid-template-columns:1.25fr .85fr;gap:48px;align-items:center;padding:84px 0 92px}
 .hero .eyebrow{color:#fff;opacity:.92}
+/* Trade artwork. Anchored into the gap between the headline and the Quick Info
+   card — right:30% keeps each scene's focal object (the car, the roof, the
+   cup) in clear space rather than buried behind the card. */
+.hero-art{position:absolute;right:30%;top:50%;transform:translateY(-50%);
+  width:min(470px,42%);color:#fff;opacity:.28;pointer-events:none;z-index:1}
+.hero-art .art{width:100%;height:auto;display:block}
+.hero.hasart .hero-grid{position:relative;z-index:2}
+@media(max-width:1100px){.hero-art{right:16%;width:min(430px,44%);opacity:.24}}
+/* Stacked layout: no card beside the text, so the art centres behind it. */
+@media(max-width:900px){.hero-art{right:auto;left:50%;
+  transform:translate(-50%,-50%);width:min(460px,84%);opacity:.15}}
 .hero h1{font-size:clamp(36px,5vw,58px);font-weight:800;margin:18px 0 16px}
 .hero p.sub{font-size:clamp(17px,2vw,20px);opacity:.92;max-width:33ch;margin-bottom:30px}
 .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
@@ -199,7 +210,15 @@ to show Ferrante&#x27;s what their website could look like.
 </header>
 
 <main id="top">
-<section class="hero">
+<section class="hero hasart">
+  <div class="hero-art" aria-hidden="true"><svg class="art" viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M64 92h130v46a44 44 0 0 1-44 44h-42a44 44 0 0 1-44-44z"/>
+<path d="M194 106h22a24 24 0 0 1 0 48h-22" opacity=".8"/>
+<path d="M46 194h166" opacity=".6"/>
+<path d="M104 66c0-10 10-12 10-22m26 22c0-10 10-12 10-22" opacity=".7"/>
+<ellipse cx="262" cy="176" rx="13" ry="19" transform="rotate(26 262 176)" opacity=".65"/>
+<path d="M255 161l14 30" opacity=".45"/>
+</svg></div>
   <div class="wrap hero-grid">
     <div>
       <span class="eyebrow"><svg class="ico" viewBox="0 0 24 24"><path d="M12 21s-6-5.7-6-11a6 6 0 0 1 12 0c0 5.3-6 11-6 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Coffee & More in Spokane</span>
