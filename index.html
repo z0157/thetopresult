@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Top Result — Websites for Local Service Businesses</title>
-<meta name="description" content="We build and manage the website for your service business, so when someone searches, you're the one they call. Live in days. $97/month, everything included.">
+<meta name="description" content="We build and manage the website for your service business, so when someone searches, you're the one they call. See a real example. Live in days. $97/month, everything included.">
 <link rel="canonical" href="https://thetopresult.com/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="The Top Result — Websites for Local Service Businesses">
@@ -12,20 +12,20 @@
 <meta name="theme-color" content="#0b1120">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230b1120'/><text x='16' y='23' font-size='18' font-family='Arial' font-weight='bold' fill='%2338bdf8' text-anchor='middle'>1</text></svg>">
 <style>
 :root{
   --ink:#0b1120;--ink2:#131c31;--paper:#fff;--soft:#f5f7fb;
   --brand:#38bdf8;--brand2:#0ea5e9;--brandd:#0369a1;
   --muted:#5b6779;--line:#e5eaf1;--ok:#16a34a;
-  --radius:16px;--maxw:1120px;
+  --radius:16px;--maxw:1140px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);
   background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-h1,h2,h3,.brand{font-family:Sora,Inter,sans-serif;letter-spacing:-.025em;line-height:1.12}
+h1,h2,h3,.brand{font-family:Sora,Inter,sans-serif;letter-spacing:-.028em;line-height:1.1}
 a{color:inherit;text-decoration:none}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
 .btn{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:16px;
@@ -33,15 +33,20 @@ a{color:inherit;text-decoration:none}
   transition:transform .15s ease,box-shadow .15s ease,background .15s}
 .btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 .btn-p{background:var(--brand);color:#04121f;box-shadow:0 14px 34px -14px var(--brand)}
-.btn-p:hover{transform:translateY(-2px)}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 18px 40px -14px var(--brand)}
 .btn-g{background:rgba(255,255,255,.10);color:#fff;border-color:rgba(255,255,255,.35)}
 .btn-g:hover{background:rgba(255,255,255,.2)}
-.btn-d{background:var(--ink);color:#fff}
-.btn-d:hover{transform:translateY(-2px)}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;
-  letter-spacing:.1em;text-transform:uppercase;color:var(--brand)}
+.btn-o{background:#fff;color:var(--ink);border-color:var(--line)}
+.btn-o:hover{border-color:var(--brand);color:var(--brandd)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;
+  letter-spacing:.11em;text-transform:uppercase;color:var(--brand)}
 
-header{position:sticky;top:0;z-index:60;background:rgba(11,17,32,.9);backdrop-filter:blur(12px);
+/* reveal on scroll */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+header{position:sticky;top:0;z-index:80;background:rgba(11,17,32,.92);backdrop-filter:blur(12px);
   border-bottom:1px solid rgba(255,255,255,.08)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:70px}
 .brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:19px;color:#fff}
@@ -51,43 +56,68 @@ header{position:sticky;top:0;z-index:60;background:rgba(11,17,32,.9);backdrop-fi
 .nav-links a{font-size:15px;color:#aab6c8;font-weight:500}
 .nav-links a:hover{color:#fff}
 
-.hero{position:relative;color:#fff;background:linear-gradient(160deg,var(--ink) 0%,var(--ink2) 60%,#0a2440 100%);overflow:hidden}
-.hero::after{content:"";position:absolute;inset:0;opacity:.35;
-  background:radial-gradient(700px 420px at 78% 8%,rgba(56,189,248,.35),transparent 62%)}
-.hero .wrap{position:relative;z-index:2;padding:88px 24px 96px;display:grid;
-  grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.hero{position:relative;color:#fff;background:linear-gradient(160deg,var(--ink) 0%,var(--ink2) 58%,#0a2440 100%);overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;opacity:.36;pointer-events:none;
+  background:radial-gradient(720px 430px at 78% 6%,rgba(56,189,248,.36),transparent 62%)}
+.hero .wrap{position:relative;z-index:2;padding:84px 24px 92px;display:grid;
+  grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
 .hero h1{font-size:clamp(38px,5.4vw,62px);font-weight:800;margin:20px 0 18px}
 .hero h1 em{font-style:normal;color:var(--brand)}
-.hero p.lede{font-size:clamp(17px,2vw,20px);color:#c2cddc;max-width:36ch;margin-bottom:32px}
+.hero p.lede{font-size:clamp(17px,2vw,20px);color:#c2cddc;max-width:37ch;margin-bottom:30px}
 .hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
 .hero-note{margin-top:22px;font-size:14.5px;color:#8fa0b6}
 
-/* search result mock */
-.serp{background:#fff;border-radius:18px;box-shadow:0 40px 80px -30px rgba(0,0,0,.6);
+/* --- animated search result --- */
+.serp{background:#fff;border-radius:18px;box-shadow:0 40px 80px -30px rgba(0,0,0,.62);
   overflow:hidden;color:var(--ink)}
 .serp-bar{display:flex;align-items:center;gap:10px;padding:14px 16px;background:var(--soft);
   border-bottom:1px solid var(--line)}
 .serp-input{flex:1;background:#fff;border:1px solid var(--line);border-radius:999px;
-  padding:9px 16px;font-size:14px;color:var(--muted)}
-.serp-body{padding:8px 18px 18px}
+  padding:9px 16px;font-size:14px;color:var(--ink);min-height:38px;display:flex;align-items:center}
+.caret{display:inline-block;width:1.5px;height:16px;background:var(--ink);margin-left:1px;
+  animation:blink 1s steps(1) infinite;vertical-align:-3px}
+@keyframes blink{50%{opacity:0}}
+.serp-body{padding:8px 18px 18px;min-height:250px}
 .res{padding:15px 0;border-bottom:1px solid var(--line)}
 .res:last-child{border-bottom:0}
 .res .u{font-size:12.5px;color:var(--muted)}
 .res .t{font-size:17px;color:#1a56c4;font-weight:600;margin:3px 0 4px}
 .res .d{font-size:13.5px;color:var(--muted)}
-.res.you{background:linear-gradient(90deg,rgba(56,189,248,.14),transparent);
+.res.you{background:linear-gradient(90deg,rgba(56,189,248,.16),transparent);
   margin:0 -18px;padding-left:18px;padding-right:18px;border-left:3px solid var(--brand)}
 .res.you .t{color:#0b5bd3}
 .badge-you{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;
   text-transform:uppercase;color:#04121f;background:var(--brand);padding:3px 9px;
   border-radius:999px;margin-left:8px;vertical-align:2px}
-.res.ghost{opacity:.45}
+.res.ghost{opacity:.42}
+.res.pop{animation:pop .5s cubic-bezier(.2,.9,.3,1.3)}
+@keyframes pop{0%{opacity:0;transform:translateY(-8px) scale(.98)}100%{opacity:1;transform:none}}
 
-section{padding:88px 0;scroll-margin-top:70px}  /* clear the sticky header on anchor jumps */
-.head{text-align:center;max-width:640px;margin:0 auto 52px}
-.head h2{font-size:clamp(28px,3.6vw,42px);font-weight:800;margin:14px 0 14px}
+section{padding:88px 0;scroll-margin-top:70px}
+.head{text-align:center;max-width:660px;margin:0 auto 52px}
+.head h2{font-size:clamp(28px,3.7vw,43px);font-weight:800;margin:14px 0 14px}
 .head p{color:var(--muted);font-size:17.5px}
 .soft{background:var(--soft)}
+.dark{background:var(--ink);color:#fff}
+.dark .head p{color:#a9b6c8}
+
+/* --- live demo --- */
+.tabs{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:30px}
+.tab{background:#fff;border:1.5px solid var(--line);border-radius:999px;padding:11px 22px;
+  font-weight:600;font-size:15px;cursor:pointer;color:var(--muted);transition:.16s;font-family:inherit}
+.tab:hover{border-color:#c3cede;color:var(--ink)}
+.tab[aria-selected="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.chrome{max-width:1000px;margin:0 auto;background:#fff;border-radius:16px;overflow:hidden;
+  border:1px solid var(--line);box-shadow:0 40px 80px -34px rgba(11,17,32,.5)}
+.cbar{display:flex;align-items:center;gap:9px;padding:13px 16px;background:#eef2f7;
+  border-bottom:1px solid var(--line)}
+.cdot{width:11px;height:11px;border-radius:50%}
+.curl{flex:1;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 15px;
+  font-size:13px;color:var(--muted);margin-left:6px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.frame{width:100%;height:600px;border:0;display:block;background:#fff}
+.demo-foot{display:flex;gap:14px;justify-content:center;align-items:center;
+  margin-top:26px;flex-wrap:wrap}
+.demo-note{font-size:14px;color:var(--muted);text-align:center;margin-top:14px}
 
 .g3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px;
@@ -99,30 +129,40 @@ section{padding:88px 0;scroll-margin-top:70px}  /* clear the sticky header on an
 .card p{color:var(--muted);font-size:15.5px}
 
 .split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.split h2{font-size:clamp(26px,3.3vw,38px);font-weight:800;margin:14px 0 18px}
+.split h2{font-size:clamp(26px,3.4vw,39px);font-weight:800;margin:14px 0 18px}
 .split p{color:var(--muted);font-size:16.5px;margin-bottom:14px}
 .checks{list-style:none;display:grid;gap:13px;margin-top:22px}
 .checks li{display:flex;gap:12px;align-items:flex-start;font-weight:500}
 .checks svg{width:22px;height:22px;flex:none;stroke:var(--ok);fill:none;stroke-width:2.5;
   stroke-linecap:round;stroke-linejoin:round;margin-top:1px}
 
-.trades{display:flex;flex-wrap:wrap;gap:11px;justify-content:center;max-width:820px;margin:0 auto}
+/* phone mock */
+.phone{width:290px;margin:0 auto;background:#0b1120;border-radius:38px;padding:11px;
+  box-shadow:0 46px 90px -34px rgba(11,17,32,.62)}
+.phone-in{background:#fff;border-radius:28px;overflow:hidden;position:relative}
+.notch{position:absolute;top:0;left:50%;transform:translateX(-50%);width:110px;height:22px;
+  background:#0b1120;border-radius:0 0 14px 14px;z-index:3}
+.pframe{width:100%;height:540px;border:0;display:block}
+
+.trades{display:flex;flex-wrap:wrap;gap:11px;justify-content:center;max-width:840px;margin:0 auto}
 .chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:11px 20px;
   font-weight:600;font-size:15px}
+.dark .chip{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.16);color:#e2e8f0}
 
 .price{background:var(--ink);color:#fff;border-radius:22px;padding:52px 44px;text-align:center;
   position:relative;overflow:hidden}
-.price::after{content:"";position:absolute;inset:0;opacity:.4;
-  background:radial-gradient(600px 300px at 50% -20%,rgba(56,189,248,.4),transparent 60%)}
+.price::after{content:"";position:absolute;inset:0;opacity:.42;pointer-events:none;
+  background:radial-gradient(620px 320px at 50% -20%,rgba(56,189,248,.42),transparent 60%)}
 .price>*{position:relative;z-index:2}
 .price .amt{font-family:Sora;font-size:76px;font-weight:800;line-height:1}
 .price .amt span{font-size:26px;color:#8fa0b6;font-weight:600}
-.price ul{list-style:none;display:grid;gap:12px;max-width:430px;margin:30px auto 34px;text-align:left}
+.price ul{list-style:none;display:grid;gap:12px;max-width:440px;margin:30px auto 34px;text-align:left}
 .price li{display:flex;gap:12px;align-items:flex-start;color:#c2cddc;font-size:16px}
 .price li svg{width:21px;height:21px;flex:none;stroke:var(--brand);fill:none;stroke-width:2.5;
   stroke-linecap:round;stroke-linejoin:round;margin-top:2px}
+.fineprint{margin-top:18px;font-size:13.5px;color:#8fa0b6}
 
-.faq{max-width:780px;margin:0 auto;display:grid;gap:16px}
+.faq{max-width:790px;margin:0 auto;display:grid;gap:16px}
 .q{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px 26px}
 .q h3{font-size:17.5px;margin-bottom:8px}
 .q p{color:var(--muted);font-size:15.5px}
@@ -136,12 +176,17 @@ footer{background:var(--ink);color:#8fa0b6;padding:56px 24px 30px}
   border-top:1px solid rgba(255,255,255,.1);font-size:13.5px;display:flex;
   justify-content:space-between;gap:12px;flex-wrap:wrap}
 
-@media(max-width:900px){
-  .hero .wrap{grid-template-columns:1fr;gap:44px;padding:64px 24px 76px}
+@media(max-width:980px){
+  .hero .wrap{grid-template-columns:1fr;gap:44px;padding:62px 24px 74px}
   .g3,.split{grid-template-columns:1fr;gap:34px}
   .nav-links{display:none}
   section{padding:64px 0}
   .price{padding:40px 24px}
+  .frame{height:460px}
+}
+@media(max-width:560px){
+  .frame{height:400px}
+  .price .amt{font-size:60px}
 }
 </style>
 </head>
@@ -151,10 +196,10 @@ footer{background:var(--ink);color:#8fa0b6;padding:56px 24px 30px}
   <div class="wrap nav">
     <a class="brand" href="#top"><span class="mark">1</span>The Top Result</a>
     <nav class="nav-links">
+      <a href="#demo">See an example</a>
       <a href="#how">How it works</a>
       <a href="#who">Who it's for</a>
       <a href="#pricing">Pricing</a>
-      <a href="#faq">FAQ</a>
     </nav>
     <a class="btn btn-p" href="#pricing">Get started</a>
   </div>
@@ -167,9 +212,9 @@ footer{background:var(--ink);color:#8fa0b6;padding:56px 24px 30px}
       <h1>When they search, be <em>the top result</em>.</h1>
       <p class="lede">Your next customer is on their phone right now, looking for what you do. If they can't find you, they call someone else.</p>
       <div class="hero-cta">
-        <a class="btn btn-p" href="#pricing">See pricing
+        <a class="btn btn-p" href="#demo">See a real example
           <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn-g" href="#how">How it works</a>
+        <a class="btn btn-g" href="#pricing">Pricing</a>
       </div>
       <p class="hero-note">Built for you in days · Hosting and updates included · Cancel anytime</p>
     </div>
@@ -177,48 +222,69 @@ footer{background:var(--ink);color:#8fa0b6;padding:56px 24px 30px}
     <div class="serp" aria-label="Example search results">
       <div class="serp-bar">
         <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#5b6779" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-        <div class="serp-input">emergency roof repair near me</div>
+        <div class="serp-input"><span id="typed"></span><span class="caret"></span></div>
       </div>
-      <div class="serp-body">
-        <div class="res you">
-          <div class="u">yourbusiness.com</div>
-          <div class="t">Your Business — Emergency Roof Repair<span class="badge-you">You</span></div>
-          <div class="d">Same-day repairs, licensed and insured. Call now for a free estimate.</div>
-        </div>
-        <div class="res ghost">
-          <div class="u">competitor-one.com</div>
-          <div class="t">Competitor Roofing Co.</div>
-          <div class="d">Residential and commercial roofing services in your area.</div>
-        </div>
-        <div class="res ghost">
-          <div class="u">competitor-two.com</div>
-          <div class="t">Another Roofing Company</div>
-          <div class="d">Serving the area for over 20 years. Free quotes available.</div>
-        </div>
-      </div>
+      <div class="serp-body" id="serpBody"></div>
     </div>
+  </div>
+</section>
+
+<!-- ============ LIVE DEMO — the whole pitch in one section ============ -->
+<section id="demo" class="soft">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">See it for yourself</span>
+      <h2>This is a real site. Not a mockup.</h2>
+      <p>Every one of these was produced by our system, start to finish. Pick a trade and look around — it's the live page, running right here.</p>
+    </div>
+
+    <div class="tabs rv" role="tablist" aria-label="Example sites by trade">
+      <button class="tab" role="tab" aria-selected="true"  data-slug="summit-ridge-roofing"    data-domain="summitridgeroofing.com">Roofing</button>
+      <button class="tab" role="tab" aria-selected="false" data-slug="ironwood-heating-air"    data-domain="ironwoodheating.com">HVAC</button>
+      <button class="tab" role="tab" aria-selected="false" data-slug="cedar-creek-restoration" data-domain="cedarcreekrestoration.com">Water damage</button>
+    </div>
+
+    <div class="chrome rv">
+      <div class="cbar">
+        <span class="cdot" style="background:#f87171"></span>
+        <span class="cdot" style="background:#fbbf24"></span>
+        <span class="cdot" style="background:#34d399"></span>
+        <span class="curl" id="demoUrl">summitridgeroofing.com</span>
+      </div>
+      <iframe class="frame" id="demoFrame" title="Example website"
+              src="examples/summit-ridge-roofing/" loading="lazy"></iframe>
+    </div>
+
+    <div class="demo-foot rv">
+      <a class="btn btn-o" id="demoOpen" href="examples/summit-ridge-roofing/" target="_blank" rel="noopener">
+        Open it full screen
+        <svg viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-8 8M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+      </a>
+      <a class="btn btn-p" href="#pricing">Get one like this</a>
+    </div>
+    <p class="demo-note rv">These are demonstration businesses — the names and phone numbers are made up. Yours would use your real details, photos and reviews.</p>
   </div>
 </section>
 
 <section id="how">
   <div class="wrap">
-    <div class="head">
+    <div class="head rv">
       <span class="eyebrow">How it works</span>
       <h2>You keep working. We handle the website.</h2>
       <p>No forms to fill in, no design meetings, no software to learn.</p>
     </div>
     <div class="g3">
-      <div class="card">
+      <div class="card rv">
         <div class="n">1</div>
         <h3>We build it first</h3>
         <p>Before you pay anything, we build your site using your real business details, your photos, and your actual customer reviews. You see the finished thing, not a mockup.</p>
       </div>
-      <div class="card">
+      <div class="card rv">
         <div class="n">2</div>
         <h3>You take a look</h3>
         <p>If you like it, we put it live on your own domain, usually within a couple of days. If you don't, that's the end of it and it costs you nothing.</p>
       </div>
-      <div class="card">
+      <div class="card rv">
         <div class="n">3</div>
         <h3>We keep it running</h3>
         <p>Hosting, security, updates, and changes are all included. Need your hours or prices changed? Send a message and it's done.</p>
@@ -229,47 +295,39 @@ footer{background:var(--ink);color:#8fa0b6;padding:56px 24px 30px}
 
 <section class="soft">
   <div class="wrap split">
-    <div>
+    <div class="rv">
       <span class="eyebrow">Why it matters</span>
       <h2>Most people never scroll.</h2>
       <p>When something breaks, nobody researches. They pull out a phone, search, and call one of the first businesses that looks legitimate.</p>
       <p>If you don't have a website, you're not in that comparison. It isn't that you lost — you were never on the list.</p>
       <ul class="checks">
-        <li><svg viewBox="0 0 24 24"><path d="M5 12l4 4L19 6"/></svg><span>Looks professional on a phone, where people actually search</span></li>
+        <li><svg viewBox="0 0 24 24"><path d="M5 12l4 4L19 6"/></svg><span>Built for a phone first, because that's where people search</span></li>
         <li><svg viewBox="0 0 24 24"><path d="M5 12l4 4L19 6"/></svg><span>Tap-to-call button so they reach you in one touch</span></li>
         <li><svg viewBox="0 0 24 24"><path d="M5 12l4 4L19 6"/></svg><span>Your services, your area, your hours — clear and correct</span></li>
         <li><svg viewBox="0 0 24 24"><path d="M5 12l4 4L19 6"/></svg><span>Set up properly for Google, so you can actually be found</span></li>
       </ul>
     </div>
-    <div class="serp">
-      <div class="serp-bar">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#5b6779" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-        <div class="serp-input">water damage repair — open now</div>
-      </div>
-      <div class="serp-body">
-        <div class="res you">
-          <div class="u">yourbusiness.com</div>
-          <div class="t">Your Business — 24/7 Water Damage<span class="badge-you">You</span></div>
-          <div class="d">Emergency response. Insurance work welcome. Call anytime.</div>
-        </div>
-        <div class="res ghost">
-          <div class="u">directory-listing.com</div>
-          <div class="t">Local Restoration Companies — Directory</div>
-          <div class="d">Browse restoration contractors in your area.</div>
+    <div class="rv">
+      <div class="phone">
+        <div class="phone-in">
+          <div class="notch"></div>
+          <iframe class="pframe" title="Example site on a phone"
+                  src="examples/cedar-creek-restoration/" loading="lazy"></iframe>
         </div>
       </div>
+      <p class="demo-note" style="margin-top:18px">The same site, on the screen that matters.</p>
     </div>
   </div>
 </section>
 
-<section id="who">
+<section id="who" class="dark">
   <div class="wrap">
-    <div class="head">
+    <div class="head rv">
       <span class="eyebrow">Who it's for</span>
       <h2>Trades where one job pays for the year.</h2>
       <p>We work with service businesses where a single customer is worth far more than the cost of being found.</p>
     </div>
-    <div class="trades">
+    <div class="trades rv">
       <span class="chip">Roofing</span><span class="chip">Water damage &amp; restoration</span>
       <span class="chip">HVAC</span><span class="chip">Plumbing</span><span class="chip">Electrical</span>
       <span class="chip">Garage doors</span><span class="chip">Towing</span><span class="chip">Concrete</span>
@@ -281,12 +339,12 @@ footer{background:var(--ink);color:#8fa0b6;padding:56px 24px 30px}
 
 <section class="soft" id="pricing">
   <div class="wrap">
-    <div class="head">
+    <div class="head rv">
       <span class="eyebrow">Pricing</span>
       <h2>One price. Everything included.</h2>
       <p>No setup fee, no contract, no surprise invoices.</p>
     </div>
-    <div class="price">
+    <div class="price rv">
       <div class="amt">$97<span>/month</span></div>
       <ul>
         <li><svg viewBox="0 0 24 24"><path d="M5 12l4 4L19 6"/></svg><span>Your website designed, built, and put live</span></li>
@@ -295,29 +353,33 @@ footer{background:var(--ink);color:#8fa0b6;padding:56px 24px 30px}
         <li><svg viewBox="0 0 24 24"><path d="M5 12l4 4L19 6"/></svg><span>Set up for Google and mobile from day one</span></li>
         <li><svg viewBox="0 0 24 24"><path d="M5 12l4 4L19 6"/></svg><span>Cancel any time — the site is yours to take</span></li>
       </ul>
-      <a class="btn btn-p" href="#contact">Get started</a>
+      <!-- href is rewritten to the live Stripe Payment Link by
+           sitesmith/enable_checkout.py; until then it falls back to email. -->
+      <a class="btn btn-p" id="checkout" data-checkout
+         href="mailto:hello@thetopresult.com?subject=I%27d%20like%20to%20get%20started">Get started</a>
+      <p class="fineprint">Secure checkout by Stripe · Cancel any time</p>
     </div>
   </div>
 </section>
 
 <section id="faq">
   <div class="wrap">
-    <div class="head">
+    <div class="head rv">
       <span class="eyebrow">Questions</span>
       <h2>Straight answers.</h2>
     </div>
     <div class="faq">
-      <div class="q"><h3>Do I need to do anything?</h3>
+      <div class="q rv"><h3>Do I need to do anything?</h3>
         <p>Almost nothing. We build it from information that's already public about your business, then check the details with you. Most owners spend about ten minutes on the whole thing.</p></div>
-      <div class="q"><h3>What if I already have a website?</h3>
+      <div class="q rv"><h3>What if I already have a website?</h3>
         <p>Then you may not need us. If yours is outdated or doesn't work properly on a phone, we're happy to show you what a replacement would look like — no obligation either way.</p></div>
-      <div class="q"><h3>Do I own the website?</h3>
+      <div class="q rv"><h3>Do I own the website?</h3>
         <p>Yes. It's your business, your domain, and your content. If you cancel, you can take the site with you.</p></div>
-      <div class="q"><h3>Is there a contract?</h3>
+      <div class="q rv"><h3>Is there a contract?</h3>
         <p>No. It's month to month. If it isn't earning its keep, cancel and we part on good terms.</p></div>
-      <div class="q"><h3>How long does it take?</h3>
+      <div class="q rv"><h3>How long does it take?</h3>
         <p>Usually two to three days from the moment you say go. Rush jobs can be faster.</p></div>
-      <div class="q"><h3>Will this put me at the top of Google?</h3>
+      <div class="q rv"><h3>Will this put me at the top of Google?</h3>
         <p>Honestly, not on its own and not overnight. A good website is what makes ranking possible — without one you can't compete at all. We build it properly so the work you do afterwards actually counts.</p></div>
     </div>
   </div>
@@ -335,9 +397,9 @@ footer{background:var(--ink);color:#8fa0b6;padding:56px 24px 30px}
     </div>
     <div>
       <p style="color:#fff;font-weight:600;margin-bottom:10px">Company</p>
+      <p><a href="#demo">See an example</a></p>
       <p><a href="#how">How it works</a></p>
       <p><a href="#pricing">Pricing</a></p>
-      <p><a href="#faq">FAQ</a></p>
     </div>
   </div>
   <div class="foot-b">
@@ -346,6 +408,119 @@ footer{background:var(--ink);color:#8fa0b6;padding:56px 24px 30px}
   </div>
 </footer>
 
-<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+/* ---------- reveal on scroll ---------- */
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  });
+}, {rootMargin: '0px 0px -40px 0px', threshold: .06});
+document.querySelectorAll('.rv').forEach((el, i) => {
+  el.style.transitionDelay = (Math.min(i % 3, 2) * 70) + 'ms';
+  io.observe(el);
+});
+
+/* ---------- demo tabs ---------- */
+const frame  = document.getElementById('demoFrame');
+const urlEl  = document.getElementById('demoUrl');
+const openEl = document.getElementById('demoOpen');
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(t => t.setAttribute('aria-selected', 'false'));
+    tab.setAttribute('aria-selected', 'true');
+    const path = 'examples/' + tab.dataset.slug + '/';
+    frame.src = path;
+    openEl.href = path;
+    urlEl.textContent = tab.dataset.domain;
+  });
+});
+
+/* ---------- hero: type a query, then show the results it would return ---------- */
+const SCENES = [
+  {q: 'emergency roof repair near me',
+   you: ['yourbusiness.com', 'Your Business — Emergency Roof Repair',
+         'Same-day repairs, licensed and insured. Call now for a free estimate.'],
+   others: [['competitor-one.com', 'Competitor Roofing Co.',
+             'Residential and commercial roofing services in your area.'],
+            ['competitor-two.com', 'Another Roofing Company',
+             'Serving the area for over 20 years. Free quotes available.']]},
+  {q: 'water damage repair open now',
+   you: ['yourbusiness.com', 'Your Business — 24/7 Water Damage',
+         'Emergency response. Insurance work welcome. Call anytime.'],
+   others: [['directory-listing.com', 'Local Restoration Companies — Directory',
+             'Browse restoration contractors in your area.'],
+            ['competitor-three.com', 'Rival Restoration LLC',
+             'Flood and fire damage cleanup services.']]},
+  {q: 'ac not blowing cold — repair',
+   you: ['yourbusiness.com', 'Your Business — AC Repair & Service',
+         'Same-day service calls. Straight pricing, no surprises. Call today.'],
+   others: [['competitor-four.com', 'Cooling Contractors Inc.',
+             'Heating and air conditioning installation and repair.'],
+            ['directory-listing.com', 'HVAC Companies Near You — Directory',
+             'Compare local heating and cooling companies.']]}
+];
+
+const typed = document.getElementById('typed');
+const body  = document.getElementById('serpBody');
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* Built with createElement/textContent rather than innerHTML — these strings are
+   ours, but the habit is what keeps it safe when the copy later comes from data. */
+function resultRow([url, title, desc], isYou) {
+  const row = document.createElement('div');
+  row.className = isYou ? 'res you pop' : 'res ghost';
+
+  const u = document.createElement('div');
+  u.className = 'u';
+  u.textContent = url;
+
+  const t = document.createElement('div');
+  t.className = 't';
+  t.textContent = title;
+  if (isYou) {
+    const badge = document.createElement('span');
+    badge.className = 'badge-you';
+    badge.textContent = 'You';
+    t.appendChild(badge);
+  }
+
+  const d = document.createElement('div');
+  d.className = 'd';
+  d.textContent = desc;
+
+  row.append(u, t, d);
+  return row;
+}
+
+function render(scene, withYou) {
+  body.replaceChildren();
+  if (withYou) body.appendChild(resultRow(scene.you, true));
+  scene.others.forEach(o => body.appendChild(resultRow(o, false)));
+}
+
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+async function run() {
+  if (reduceMotion) {
+    typed.textContent = SCENES[0].q;
+    render(SCENES[0], true);
+    return;
+  }
+  let i = 0;
+  for (;;) {
+    const s = SCENES[i % SCENES.length];
+    typed.textContent = '';
+    render(s, false);                  // competitors only — you aren't there
+    for (const ch of s.q) { typed.textContent += ch; await sleep(42); }
+    await sleep(420);
+    render(s, true);                   // then you appear, at the top
+    await sleep(3200);
+    i++;
+  }
+}
+run();
+</script>
 </body>
 </html>
