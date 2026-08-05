@@ -171,6 +171,8 @@ footer{background:var(--ink);color:#cbd5e1;padding:56px 24px 28px}
 .foot-h{color:#fff;font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px}
 .foot-bottom{max-width:var(--maxw);margin:34px auto 0;padding-top:22px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px;color:#7c8aa0}
 .foot-bottom a{color:#9aa6b6}
+.foot-credits{max-width:var(--maxw);margin:26px auto 0;font-size:11.5px;line-height:1.7;color:#6b7889}
+.foot-credits a{color:#8592a4}
 
 /* responsive */
 @media(max-width:900px){
@@ -210,15 +212,8 @@ to show D.T. Nails what their website could look like.
 </header>
 
 <main id="top">
-<section class="hero hasart">
-  <div class="hero-art" aria-hidden="true"><svg class="art" viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-<circle cx="82" cy="152" r="22"/><circle cx="82" cy="70" r="22"/>
-<path d="M100 138L206 44"/><path d="M100 84l106 94"/>
-<path d="M196 36l24-14 8 14-24 14z" opacity=".8"/>
-<path d="M196 186l24 14 8-14-24-14z" opacity=".8"/>
-<path d="M250 60h34v130h-34z" opacity=".6"/>
-<path d="M258 76h18m-18 22h18m-18 22h18" opacity=".45"/>
-</svg></div>
+<section class="hero haspic" style="--heroimg:url('https://thetopresult.com/assets/stock/salon/0.jpg')">
+  
   <div class="wrap hero-grid">
     <div>
       <span class="eyebrow"><svg class="ico" viewBox="0 0 24 24"><path d="M12 21s-6-5.7-6-11a6 6 0 0 1 12 0c0 5.3-6 11-6 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Beauty & Style in Fort Wayne</span>
@@ -264,7 +259,7 @@ to show D.T. Nails what their website could look like.
 <section class="block" id="about">
   <div class="wrap about-grid">
     
-    <div class="about-panel"><div class="about-mono">DT</div></div>
+    <div class="about-panel" style="background-image:url('https://thetopresult.com/assets/stock/salon/0.jpg');background-size:cover;background-position:center"></div>
     
     <div>
       <span class="eyebrow">About us</span>
@@ -279,6 +274,15 @@ to show D.T. Nails what their website could look like.
 
 
 
+
+<section class="block" id="work">
+  <div class="wrap">
+    <div class="section-head"><span class="eyebrow">Our work</span><h2>Recent jobs</h2></div>
+    <div class="gallery">
+      <figure><img src="https://thetopresult.com/assets/stock/salon/1.jpg" alt="D.T. Nails work" loading="lazy"></figure><figure><img src="https://thetopresult.com/assets/stock/salon/2.jpg" alt="D.T. Nails work" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
 
 
 <section class="block" id="visit">
@@ -322,6 +326,12 @@ to show D.T. Nails what their website could look like.
       <p>Mon: 8:00 AM – 6:00 PM</p><p>Tue: 8:00 AM – 6:00 PM</p><p>Wed: 8:00 AM – 6:00 PM</p><p>Thu: 8:00 AM – 6:00 PM</p><p>Fri: 8:00 AM – 6:00 PM</p><p>Sat: 9:00 AM – 4:00 PM</p><p>Sun: Closed</p>
     </div>
   </div>
+  
+  
+  <div class="foot-credits">Photography:
+    <a href="https://commons.wikimedia.org/wiki/File:The%20Hair%20Club%20Walmgate%20York%20Nov25.jpg" target="_blank" rel="noopener nofollow">The Hair Club Walmgate York Nov25</a> by Malcolmxl5 (CC0) · <a href="https://commons.wikimedia.org/wiki/File:Hair%20dressing%20shop%20in%20Bretigney-Notre-Dame.jpg" target="_blank" rel="noopener nofollow">Hair dressing shop in Bretigney-Notre-Dame</a> by Андрей Романенко (CC BY-SA 4.0) · <a href="https://commons.wikimedia.org/wiki/File:Hair%20dressing%20shop%2C%20Novosibirsk%2003.jpg" target="_blank" rel="noopener nofollow">Hair dressing shop, Novosibirsk 03</a> by К.Артём.1 (CC BY-SA 4.0)
+  </div>
+  
   <div class="foot-bottom">
     <span>© <span id="yr"></span> D.T. Nails. All rights reserved.</span>
     <span>Website by <a href="#">SiteSmith</a></span>

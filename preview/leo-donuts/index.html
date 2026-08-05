@@ -171,6 +171,8 @@ footer{background:var(--ink);color:#cbd5e1;padding:56px 24px 28px}
 .foot-h{color:#fff;font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px}
 .foot-bottom{max-width:var(--maxw);margin:34px auto 0;padding-top:22px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px;color:#7c8aa0}
 .foot-bottom a{color:#9aa6b6}
+.foot-credits{max-width:var(--maxw);margin:26px auto 0;font-size:11.5px;line-height:1.7;color:#6b7889}
+.foot-credits a{color:#8592a4}
 
 /* responsive */
 @media(max-width:900px){
@@ -210,15 +212,8 @@ to show Leo Donuts what their website could look like.
 </header>
 
 <main id="top">
-<section class="hero hasart">
-  <div class="hero-art" aria-hidden="true"><svg class="art" viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-<path d="M64 92h130v46a44 44 0 0 1-44 44h-42a44 44 0 0 1-44-44z"/>
-<path d="M194 106h22a24 24 0 0 1 0 48h-22" opacity=".8"/>
-<path d="M46 194h166" opacity=".6"/>
-<path d="M104 66c0-10 10-12 10-22m26 22c0-10 10-12 10-22" opacity=".7"/>
-<ellipse cx="262" cy="176" rx="13" ry="19" transform="rotate(26 262 176)" opacity=".65"/>
-<path d="M255 161l14 30" opacity=".45"/>
-</svg></div>
+<section class="hero haspic" style="--heroimg:url('https://thetopresult.com/assets/stock/cafe/0.jpg')">
+  
   <div class="wrap hero-grid">
     <div>
       <span class="eyebrow"><svg class="ico" viewBox="0 0 24 24"><path d="M12 21s-6-5.7-6-11a6 6 0 0 1 12 0c0 5.3-6 11-6 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Coffee & More in Fort Wayne</span>
@@ -264,7 +259,7 @@ to show Leo Donuts what their website could look like.
 <section class="block" id="about">
   <div class="wrap about-grid">
     
-    <div class="about-panel"><div class="about-mono">LD</div></div>
+    <div class="about-panel" style="background-image:url('https://thetopresult.com/assets/stock/cafe/0.jpg');background-size:cover;background-position:center"></div>
     
     <div>
       <span class="eyebrow">About us</span>
@@ -279,6 +274,15 @@ to show Leo Donuts what their website could look like.
 
 
 
+
+<section class="block" id="work">
+  <div class="wrap">
+    <div class="section-head"><span class="eyebrow">Our work</span><h2>Recent jobs</h2></div>
+    <div class="gallery">
+      <figure><img src="https://thetopresult.com/assets/stock/cafe/1.jpg" alt="Leo Donuts work" loading="lazy"></figure><figure><img src="https://thetopresult.com/assets/stock/cafe/2.jpg" alt="Leo Donuts work" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
 
 
 <section class="block" id="visit">
@@ -322,6 +326,12 @@ to show Leo Donuts what their website could look like.
       <p>Mon: 8:00 AM – 6:00 PM</p><p>Tue: 8:00 AM – 6:00 PM</p><p>Wed: 8:00 AM – 6:00 PM</p><p>Thu: 8:00 AM – 6:00 PM</p><p>Fri: 8:00 AM – 6:00 PM</p><p>Sat: 9:00 AM – 4:00 PM</p><p>Sun: Closed</p>
     </div>
   </div>
+  
+  
+  <div class="foot-credits">Photography:
+    <a href="https://commons.wikimedia.org/wiki/File:Barista%20prepares%20espresso%20at%20coffee%20shop.jpg" target="_blank" rel="noopener nofollow">Barista prepares espresso at coffee shop</a> by Shixart1985 (CC BY 2.0) · <a href="https://commons.wikimedia.org/wiki/File:Cafe%20Crema%2C%20West%20Vancouver%20%2825328126667%29.jpg" target="_blank" rel="noopener nofollow">Cafe Crema, West Vancouver (25328126667)</a> by GoToVan from Vancouver, Canada (CC BY 2.0) · <a href="https://commons.wikimedia.org/wiki/File:Sutton%2C%20Surrey%2C%20London%20-%20Cafe%20Kiko.JPG" target="_blank" rel="noopener nofollow">Sutton, Surrey, London - Cafe Kiko</a> by A P Monblat (CC BY-SA 4.0)
+  </div>
+  
   <div class="foot-bottom">
     <span>© <span id="yr"></span> Leo Donuts. All rights reserved.</span>
     <span>Website by <a href="#">SiteSmith</a></span>
