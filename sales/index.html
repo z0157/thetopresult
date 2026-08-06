@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Call Sheet — The Top Result</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230b1120'/><text x='16' y='23' font-size='18' font-family='Arial' font-weight='bold' fill='%2338bdf8' text-anchor='middle'>1</text></svg>">
+<style>
+:root{--ink:#0b1120;--paper:#fff;--soft:#f5f7fb;--brand:#38bdf8;--brandd:#0369a1;
+  --muted:#5b6779;--line:#e5eaf1;--ok:#16a34a;--warn:#d97706;--stop:#dc2626;--maxw:820px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);
+  background:var(--soft);line-height:1.55;-webkit-font-smoothing:antialiased;padding-bottom:60px}
+h1,h2,h3{font-family:Sora,Inter,sans-serif;letter-spacing:-.02em;line-height:1.15}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 16px}
+
+header{background:var(--ink);color:#fff;padding:22px 0 20px;position:sticky;top:0;z-index:50}
+header .wrap{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.mark{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--brand),var(--brandd));
+  color:#04121f;display:grid;place-items:center;font-family:Sora;font-weight:800;font-size:17px;flex:none}
+header h1{font-size:19px;font-weight:800}
+header p{font-size:13px;color:#8fa0b6;width:100%}
+
+nav.jump{background:#131c31;position:sticky;top:78px;z-index:49;overflow-x:auto;
+  border-bottom:1px solid rgba(255,255,255,.08)}
+nav.jump .wrap{display:flex;gap:6px;padding:9px 16px;white-space:nowrap}
+nav.jump a{font-size:12.5px;font-weight:600;color:#c2cddc;background:rgba(255,255,255,.07);
+  padding:7px 13px;border-radius:999px;text-decoration:none}
+nav.jump a:active{background:var(--brand);color:#04121f}
+
+section{margin-top:22px;scroll-margin-top:132px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:14px}
+h2{font-size:14px;text-transform:uppercase;letter-spacing:.09em;color:var(--brandd);margin-bottom:12px}
+h3{font-size:16.5px;margin:16px 0 7px}
+h3:first-child{margin-top:0}
+p{margin-bottom:10px}
+.say{background:#eff9ff;border-left:3px solid var(--brand);padding:13px 15px;border-radius:0 9px 9px 0;
+  margin:9px 0;font-size:15.5px}
+.say b{display:block;font-size:11.5px;text-transform:uppercase;letter-spacing:.07em;
+  color:var(--brandd);margin-bottom:5px}
+.muted{color:var(--muted);font-size:14px}
+ul{margin:8px 0 8px 19px}li{margin-bottom:6px}
+
+details{border:1px solid var(--line);border-radius:11px;margin-bottom:9px;background:#fff;overflow:hidden}
+details[open]{border-color:#c7d6e6}
+summary{padding:14px 16px;font-weight:600;cursor:pointer;font-size:15.5px;list-style:none;
+  display:flex;justify-content:space-between;gap:10px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--brandd);font-weight:700;font-size:19px;flex:none}
+details[open] summary::after{content:"−"}
+details .body{padding:0 16px 15px;border-top:1px solid var(--line);padding-top:13px}
+
+.tag{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+  padding:3px 8px;border-radius:5px;vertical-align:2px;margin-left:6px}
+.t-ok{background:#dcfce7;color:#14532d}
+.t-no{background:#fee2e2;color:#7f1d1d}
+.t-soon{background:#fef3c7;color:#78350f}
+
+table{width:100%;border-collapse:collapse;font-size:14.5px;margin-top:6px}
+th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+td.p{font-weight:700;white-space:nowrap}
+
+.stop{background:#fef2f2;border:1px solid #fecaca;border-radius:12px;padding:16px}
+.stop h2{color:var(--stop)}
+.stop li{font-weight:500}
+.big{background:var(--ink);color:#fff;border-radius:14px;padding:22px;text-align:center}
+.big .n{font-family:Sora;font-size:44px;font-weight:800;line-height:1}
+.big .n span{font-size:18px;color:#8fa0b6}
+.big p{color:#c2cddc;font-size:14.5px;margin:8px 0 0}
+code{background:var(--soft);padding:2px 6px;border-radius:5px;font-size:13.5px;
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+@media(max-width:520px){header h1{font-size:17px}.big .n{font-size:38px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="mark">1</span>
+    <h1>Call Sheet — Nik</h1>
+    <p>Websites for local businesses · $97/month · thetopresult.com</p>
+  </div>
+</header>
+
+<nav class="jump">
+  <div class="wrap">
+    <a href="#open">Opener</a><a href="#flow">Call flow</a><a href="#obj">Objections</a>
+    <a href="#price">Pricing</a><a href="#up">Upsells</a><a href="#never">Never say</a>
+    <a href="#after">After the call</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+<section id="open">
+  <div class="card">
+    <h2>The opener</h2>
+    <p class="muted">The whole edge is that <b>the site already exists</b>. You're not pitching an idea, you're showing finished work. Lead with that in the first sentence.</p>
+    <div class="say"><b>Say this</b>
+      "Hi — is this the owner? Great. My name's Nik, I'll be quick. I noticed [BUSINESS] doesn't have a website, so I went ahead and built one for you. It's live right now — I can text you the link and you can look at it while we talk. Fair?"
+    </div>
+    <p class="muted">Then <b>stop talking</b>. Let them answer. If they say yes, text the preview link from your call sheet immediately and stay on the line while they open it.</p>
+    <h3>Why this works</h3>
+    <ul>
+      <li>No commitment asked for in the first 15 seconds</li>
+      <li>Curiosity — they want to see themselves</li>
+      <li>It's real, so you never sound like a scam</li>
+    </ul>
+  </div>
+</section>
+
+<section id="flow">
+  <div class="card">
+    <h2>Call flow</h2>
+    <h3>1 · Get them looking (0–60 sec)</h3>
+    <p>Text the link. Wait. When they open it: <i>"That's your phone number, your hours, your reviews — all real. Scroll down."</i></p>
+
+    <h3>2 · Let them react</h3>
+    <p class="muted">Do not talk over it. The site does the selling. Most people say some version of "how much?" — that's the buying signal.</p>
+
+    <h3>3 · Price, plainly</h3>
+    <div class="say"><b>Say this</b>
+      "$97 a month, everything included — hosting, updates, changes whenever you want them. No setup fee, no contract, cancel any time and the site's yours to keep."
+    </div>
+
+    <h3>4 · Close by making it small</h3>
+    <div class="say"><b>Say this</b>
+      "Want me to put it on your own domain? Takes about two days and you can cancel any month you like."
+    </div>
+
+    <h3>5 · If yes</h3>
+    <p>Take their email, send the checkout link. Tell them what happens next: <i>"You'll get an email to confirm the details — takes about ten minutes of your time, total."</i></p>
+  </div>
+</section>
+
+<section id="obj">
+  <div class="card">
+    <h2>Objections</h2>
+
+    <details><summary>"I don't need a website — all my work is word of mouth"</summary>
+      <div class="body">
+        <p>Agree with them first. Don't argue.</p>
+        <div class="say">"That's honestly the best way to get work, and this doesn't replace any of it. But think about what happens after someone recommends you — they Google your name before they call. Right now they find nothing. This is just so you look real when they check."</div>
+      </div></details>
+
+    <details><summary>"I already have a Facebook page"</summary>
+      <div class="body">
+        <div class="say">"Facebook's great for people who already know you. This is for the person searching at 9pm who's never heard of you. And we can point the site straight at your Facebook so it all works together."</div>
+      </div></details>
+
+    <details><summary>"How much?" (asked in the first 10 seconds)</summary>
+      <div class="body">
+        <p>Never dodge it. Dodging makes it sound expensive.</p>
+        <div class="say">"$97 a month, everything included. But look at it first — if you don't like it, the price doesn't matter."</div>
+      </div></details>
+
+    <details><summary>"That's too expensive"</summary>
+      <div class="body">
+        <p>Anchor to one job, in their trade.</p>
+        <div class="say">"What's one job worth to you? … Right. So if this brings you one extra [job] a year it's paid for itself twice over. And if it doesn't earn its keep, cancel — there's no contract."</div>
+        <p class="muted">Don't discount. If they can't afford $97, they're not a good customer.</p>
+      </div></details>
+
+    <details><summary>"I'm too busy right now"</summary>
+      <div class="body">
+        <div class="say">"That's exactly why I built it first. You don't have to do anything — no forms, no meetings. Ten minutes to check the details and you're done."</div>
+      </div></details>
+
+    <details><summary>"Just email me some information"</summary>
+      <div class="body">
+        <p>This usually means no. Convert it to a look now.</p>
+        <div class="say">"I can — but the site's already built, so there's nothing to read. What's the best cell? I'll text the link now, you look when you get a second, and I'll follow up Thursday."</div>
+        <p class="muted">Then actually follow up Thursday. Write it in the sheet.</p>
+      </div></details>
+
+    <details><summary>"Is this a scam? / Who are you?"</summary>
+      <div class="body">
+        <p>Be completely straight. It defuses instantly.</p>
+        <div class="say">"Totally fair question. We're a small outfit — we build websites for local businesses that don't have one, then call and see if they want it. You've paid nothing and given me nothing. The link is thetopresult.com, look us up while we talk."</div>
+      </div></details>
+
+    <details><summary>"Who else have you built for?"</summary>
+      <div class="body">
+        <p class="t-no tag" style="margin:0 0 8px">Do not invent clients</p>
+        <div class="say">"We're new — I'm not going to pretend otherwise. That's exactly why I build the site first and let it speak instead of showing you someone else's."</div>
+        <p class="muted">Honesty here wins more than a fake list, and a fake list is the thing that gets you caught.</p>
+      </div></details>
+
+    <details><summary>"Will this get me to the top of Google?"</summary>
+      <div class="body">
+        <p class="t-no tag" style="margin:0 0 8px">Never promise rankings</p>
+        <div class="say">"Not on its own, and not overnight — anyone who promises that is lying to you. What it does is make ranking possible at all. Without a site you can't compete for those searches."</div>
+      </div></details>
+  </div>
+</section>
+
+<section id="price">
+  <div class="card">
+    <div class="big">
+      <div class="n">$97<span>/month</span></div>
+      <p>Website built, hosted, and managed · unlimited changes · no setup fee · no contract</p>
+    </div>
+    <h3>What's included — say all of it</h3>
+    <ul>
+      <li>The site built for them, live on their own domain</li>
+      <li>Hosting, security, backups</li>
+      <li>Unlimited changes — they text you, it gets done</li>
+      <li>Built for phones, set up properly for Google</li>
+      <li>Cancel any time, site is theirs to take</li>
+    </ul>
+  </div>
+</section>
+
+<section id="up">
+  <div class="card">
+    <h2>Upsells — read this before offering any</h2>
+    <p class="muted">Only <b>one</b> of these is built today. Gauge interest and write it down, but <b>do not promise a date and do not take extra money</b> for anything marked not built. Selling something that doesn't exist is how a new company dies.</p>
+
+    <h3>Their real branding <span class="tag t-ok">Do it free</span></h3>
+    <p>If they have a logo, van photos, or job photos — on Facebook, on a business card, on the truck — get them. Ask them to text the pictures over.</p>
+    <div class="say"><b>Say this, once they're a customer</b>
+      "Do you have a logo, or photos of your own jobs? Text them to me and I'll put them on — costs nothing, and it'll look like yours instead of ours."
+    </div>
+    <p class="muted">This is the single highest-value thing you can do after a sale. It costs nothing, it makes the site unmistakably theirs, and it makes cancelling feel like losing something.</p>
+
+    <h3>Everything else <span class="tag t-soon">Interest only</span></h3>
+    <p>Ask the question, log the answer, move on. When enough people want the same one, we build it and go back to them.</p>
+    <table>
+      <tr><th>Add-on</th><th>Likely price</th><th>Status</th></tr>
+      <tr><td><b>Online booking</b><br><span class="muted">Customers pick a slot, it lands in their calendar</span></td><td class="p">~$40/mo</td><td><span class="tag t-no">Not built</span></td></tr>
+      <tr><td><b>Missed-call text-back</b><br><span class="muted">Missed call auto-texts "sorry we missed you"</span></td><td class="p">~$30/mo</td><td><span class="tag t-no">Not built</span></td></tr>
+      <tr><td><b>After-hours phone answering</b><br><span class="muted">Picks up nights and weekends, takes the job details</span></td><td class="p">~$79/mo</td><td><span class="tag t-no">Not built</span></td></tr>
+      <tr><td><b>Business email</b><br><span class="muted">name@theirbusiness.com</span></td><td class="p">~$20/mo</td><td><span class="tag t-no">Not built</span></td></tr>
+    </table>
+    <div class="say" style="margin-top:14px"><b>How to ask without promising</b>
+      "One thing I'm curious about — when you miss a call after hours, do you lose that job? … We're looking at building something for that. Not offering it yet, but if we do, is that something you'd pay for?"
+    </div>
+    <p class="muted">That's research, not a sale. It's also the fastest way to find out what's actually worth building.</p>
+  </div>
+</section>
+
+<section id="never">
+  <div class="card stop">
+    <h2>Never say</h2>
+    <ul>
+      <li><b>"We'll get you to #1 on Google."</b> You can't control that.</li>
+      <li><b>"We work with Google."</b> We don't. This is how people get reported.</li>
+      <li><b>Naming clients we don't have.</b> Say we're new — it lands better anyway.</li>
+      <li><b>"Your listing will be removed / there's a problem with your account."</b> Fear tactics. Not us.</li>
+      <li><b>Any delivery date for the add-ons above.</b> They don't exist yet.</li>
+      <li><b>"This is free."</b> It's free to look at. Be precise — the site is $97/mo if they keep it.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="after">
+  <div class="card">
+    <h2>After the call</h2>
+    <ul>
+      <li>Fill in the <b>Outcome</b> column on the call sheet immediately — you won't remember by lunch.</li>
+      <li>Said "send me info"? Write the follow-up day in Notes and actually do it.</li>
+      <li>Sold? Note whether they have a logo/photos to send over.</li>
+      <li>Someone asked for an add-on? Write down <i>which one</i> and <i>what they'd pay</i>.</li>
+      <li>Hard no? Mark it and never call again. Not worth the reputation.</li>
+    </ul>
+    <h3>Rough expectations</h3>
+    <p class="muted">Cold calling small businesses, a normal day looks like ~40 dials, 10–12 conversations, 2–4 who look at the site, and 0–1 sale. A day with no sale is normal and not a signal to change the pitch. Twenty calls is too small a sample to conclude anything.</p>
+  </div>
+</section>
+
+<p class="muted" style="text-align:center;margin:26px 0 0;font-size:12.5px">
+  Internal — not indexed, not linked from the site. Updated as we build.
+</p>
+
+</div>
+</body>
+</html>
