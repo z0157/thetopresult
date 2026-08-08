@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230b1120'/><text x='16' y='23' font-size='18' font-family='Arial' font-weight='bold' fill='%2338bdf8' text-anchor='middle'>1</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='17' fill='%230f1a2e'/><rect x='10' y='13' width='44' height='16' rx='8' fill='%2338bdf8' opacity='.28'/><rect x='13' y='16' width='38' height='10' rx='5' fill='%2338bdf8'/><rect x='13' y='31' width='27' height='7' rx='3.5' fill='%23ffffff' opacity='.26'/><rect x='13' y='43' width='19' height='7' rx='3.5' fill='%23ffffff' opacity='.14'/></svg>">
 <style>
 :root{
   --ink:#0b1120;--ink2:#131c31;--paper:#fff;--soft:#f5f7fb;
@@ -50,8 +50,8 @@ header{position:sticky;top:0;z-index:80;background:rgba(11,17,32,.92);backdrop-f
   border-bottom:1px solid rgba(255,255,255,.08)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:70px}
 .brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:19px;color:#fff}
-.mark{width:36px;height:36px;border-radius:9px;background:linear-gradient(135deg,var(--brand),var(--brandd));
-  color:#04121f;display:grid;place-items:center;font-family:Sora;font-weight:800;font-size:18px}
+.mark{width:36px;height:36px;flex:none;display:grid;place-items:center}
+.mark svg{width:36px;height:36px;display:block}
 .nav-links{display:flex;gap:26px;align-items:center}
 .nav-links a{font-size:15px;color:#aab6c8;font-weight:500}
 .nav-links a:hover{color:#fff}
@@ -194,7 +194,7 @@ footer{background:var(--ink);color:#8fa0b6;padding:56px 24px 30px}
 
 <header>
   <div class="wrap nav">
-    <a class="brand" href="#top"><span class="mark">1</span>The Top Result</a>
+    <a class="brand" href="#top"><span class="mark"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="tprg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#132340"/><stop offset="1" stop-color="#0d1526"/></linearGradient><filter id="tprglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><rect width="64" height="64" rx="17" fill="url(#tprg)"/><rect x="1" y="1" width="62" height="62" rx="16" fill="none" stroke="#fff" stroke-opacity=".10"/><g filter="url(#tprglow)"><rect x="13" y="16" width="38" height="10" rx="5" fill="#38bdf8"/></g><rect x="13" y="31" width="27" height="7" rx="3.5" fill="#fff" opacity=".26"/><rect x="13" y="43" width="19" height="7" rx="3.5" fill="#fff" opacity=".14"/></svg></span>The Top Result</a>
     <nav class="nav-links">
       <a href="#demo">See an example</a>
       <a href="#how">How it works</a>
@@ -388,7 +388,7 @@ footer{background:var(--ink);color:#8fa0b6;padding:56px 24px 30px}
 <footer id="contact">
   <div class="foot">
     <div>
-      <div class="brand"><span class="mark">1</span>The Top Result</div>
+      <div class="brand"><span class="mark"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="tprg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#132340"/><stop offset="1" stop-color="#0d1526"/></linearGradient><filter id="tprglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><rect width="64" height="64" rx="17" fill="url(#tprg)"/><rect x="1" y="1" width="62" height="62" rx="16" fill="none" stroke="#fff" stroke-opacity=".10"/><g filter="url(#tprglow)"><rect x="13" y="16" width="38" height="10" rx="5" fill="#38bdf8"/></g><rect x="13" y="31" width="27" height="7" rx="3.5" fill="#fff" opacity=".26"/><rect x="13" y="43" width="19" height="7" rx="3.5" fill="#fff" opacity=".14"/></svg></span>The Top Result</div>
       <p style="max-width:34ch">Websites built and managed for local service businesses across the United States.</p>
     </div>
     <div>
